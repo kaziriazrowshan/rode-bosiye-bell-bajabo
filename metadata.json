@@ -1,0 +1,6 @@
+{
+  "name": "Toke Rode Bosiye - Shiva Music Meme Portal",
+  "description": "Viral Shiva Music meme portal featuring the iconic photo and automatic background music of Toke Rode Bosiye Bell Bajabo.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

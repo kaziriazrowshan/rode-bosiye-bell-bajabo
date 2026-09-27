@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+}
+
+.font-bengali {
+  font-family: 'Hind Siliguri', 'Outfit', sans-serif;
+}
+
+@keyframes beatPulse {
+  0%, 100% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 15px rgba(239, 68, 68, 0.4));
+  }
+  50% {
+    transform: scale(1.02);
+    filter: drop-shadow(0 0 30px rgba(244, 63, 94, 0.8));
+  }
+}
+
+.animate-beat-pulse {
+  animation: beatPulse 1.8s ease-in-out infinite;
+}
+
+@keyframes floatNote {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.8;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-120px) rotate(20deg);
+    opacity: 0;
+  }
+}
+
+.floating-note {
+  animation: floatNote 3.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+/* Vinyl spinning animation */
+@keyframes spinSlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spinSlow 12s linear infinite;
+}
+
